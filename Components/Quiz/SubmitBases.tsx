@@ -3,7 +3,7 @@ import React from "react";
 export default function SubmitBases() {
   return (
     <div className=" relative mb-3 cursor-pointer group  transition-all duration-500">
-      <div className=" absolute top-0 left-10 h-full w-0 bg-gray-50 rounded-lg border-r-8 border-sky-400/70 group-hover:w-full transition-all duration-700">
+      <div className=" absolute top-0 left-10 h-full w-0 bg-gray-50 rounded-lg border-r-8 border-sky-400/70 group-hover:w-5/6 transition-all duration-700">
         <div className=" absolute bottom-0 bg-gradient-to-b from-gray-300/60 to-gray-200/30 left-0 w-full h-1/2 "></div>
       </div>
 

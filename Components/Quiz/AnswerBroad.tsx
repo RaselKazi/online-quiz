@@ -2,11 +2,11 @@ import React from "react";
 
 export default function AnswerBroad() {
   return (
-    <div className="rounded-xl shadow-2xl px-4 py-6">
-      <div className=" flex justify-center items-center pb-4 text-xl font-semibold capitalize text-gray-500">
+    <div className="rounded-xl shadow-2xl px-4 py-3 mr-6">
+      <div className=" flex justify-center items-center pb-2 text-xl font-semibold capitalize text-gray-500 border-b-2 border-sky-100">
         <p>total answer</p>
       </div>
-      <div className="grid grid-cols-4  gap-2">
+      <div className="grid grid-cols-4 py-3  gap-2">
         {[
           "1",
           "2",
@@ -30,6 +30,9 @@ export default function AnswerBroad() {
             {item}
           </div>
         ))}
+      </div>
+      <div className="border-t-2 border-sky-100 pt-2">
+        <p className=" text-gray-400 text-center text-lg">view all</p>
       </div>
     </div>
   );

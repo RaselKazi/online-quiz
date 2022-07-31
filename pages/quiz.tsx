@@ -12,8 +12,8 @@ export default function quiz() {
   return (
     <div className="">
       {openModule && <Module explain="" setOpenModule={setOpenModule}></Module>}
-      <div className=" grid grid-cols-12 w-full">
-        <div className="col-span-12 lg:col-span-9">
+      <div className=" grid grid-cols-8 w-full">
+        <div className="col-span-8 lg:col-span-6">
           <QuizBody></QuizBody>
         </div>
         <div className=" col-span-2 hidden lg:block">
