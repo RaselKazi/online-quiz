@@ -4,12 +4,12 @@ import Navbar from "./Navbar/Navbar";
 import Sidebar from "./Sidebar/Sidebar";
 
 function Layout({ children }: React.PropsWithChildren<{}>): JSX.Element {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   return (
     <div className="h-screen w-screen max-h-screen flex ">
       <div className="hidden relative lg:block  w-52 lg:w-72 ">
-        <div className="  top-0 left-0 md:block">
-          <Sidebar />
+        <div className=" md:fixed  top-0 left-0 md:block">
+          <Sidebar open={open} setOpen={setOpen} />
         </div>
       </div>
 

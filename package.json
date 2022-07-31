@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "codemirror": "^5.65.7",
+    "@codemirror/lang-javascript": "^6.0.2",
+    "@uiw/codemirror-theme-dracula": "^4.11.4",
+    "@uiw/react-codemirror": "^4.11.4",
+    "codemirror": "^6.0.1",
     "next": "12.2.3",
     "react": "18.2.0",
-    "react-codemirror2": "^7.2.1",
     "react-dom": "18.2.0"
   },
   "devDependencies": {

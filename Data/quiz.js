@@ -3238,7 +3238,7 @@ export const quizData = [
   },
   {
     id: 132,
-    title: "<a name=20191224></a>132. What's the output?",
+    title: "What's the output?",
     code: "class Counter {\n\tconstructor() {\n\t\tthis.count = 0;\n\t}\n\n\tincrement() {\n\t\tthis.count++;\n\t}\n}\n\nconst counterOne = new Counter();\ncounterOne.increment();\ncounterOne.increment();\n\nconst counterTwo = counterOne;\ncounterTwo.increment();\n\nconsole.log(counterOne.count);",
     options: [
       {

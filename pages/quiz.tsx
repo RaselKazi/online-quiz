@@ -8,10 +8,10 @@ import Module from "../Components/Utils/Module";
 import Timer from "../Components/Utils/Timer";
 
 export default function quiz() {
-  const [openModule, setOpenModule] = useState(false);
+  // const [openModule, setOpenModule] = useState(false);
   return (
     <div className="">
-      {openModule && <Module explain="" setOpenModule={setOpenModule}></Module>}
+      {/* {openModule && <Module explain={} setOpenModule={setOpenModule}></Module>} */}
       <div className=" grid grid-cols-8 w-full">
         <div className="col-span-8 lg:col-span-6">
           <QuizBody></QuizBody>
@@ -27,8 +27,8 @@ export default function quiz() {
 
           <AnswerBroad></AnswerBroad>
           <div className=" flex flex-col justify-evenly mt-6">
-            <SubmitBases></SubmitBases>
-            <SubmitBases></SubmitBases>
+            <SubmitBases />
+            <SubmitBases color="red" />
           </div>
         </div>
       </div>
