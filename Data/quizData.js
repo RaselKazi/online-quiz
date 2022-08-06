@@ -4,15 +4,15 @@ export const quizData = [
   {
     id: 1,
     title: "1. What's the output?",
-    code: 'function sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = "Lydia";\n  let age = 21;\n}\n\nsayHi();',
+    code: 'function sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = "Rasel";\n  let age = 21;\n}\n\nsayHi();',
     options: [
       {
         correct: false,
-        text: "`Lydia` and `undefined`",
+        text: "`Rasel` and `undefined`",
       },
       {
         correct: false,
-        text: "`Lydia` and `ReferenceError`",
+        text: "`Rasel` and `ReferenceError`",
       },
       {
         correct: false,
@@ -75,7 +75,7 @@ export const quizData = [
   {
     id: 4,
     title: "4. What's the output?",
-    code: '+true;\n!"Lydia";',
+    code: '+true;\n!"Rasel";',
     options: [
       {
         correct: true,
@@ -91,7 +91,7 @@ export const quizData = [
       },
     ],
     explanation:
-      "The unary plus tries to convert an operand to a number. `true` is `1`, and `false` is `0`.\n\nThe string `'Lydia'` is a truthy value. What we're actually asking, is \"is this truthy value falsy?\". This returns `false`.",
+      "The unary plus tries to convert an operand to a number. `true` is `1`, and `false` is `0`.\n\nThe string `'Rasel'` is a truthy value. What we're actually asking, is \"is this truthy value falsy?\". This returns `false`.",
   },
   {
     id: 5,
@@ -246,7 +246,7 @@ export const quizData = [
   {
     id: 11,
     title: "11. What's the output?",
-    code: 'function Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst member = new Person("Lydia", "Hallie");\nPerson.getFullName = function() {\n  return `${this.firstName} ${this.lastName}`;\n};\n\nconsole.log(member.getFullName());',
+    code: 'function Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst member = new Person("Rasel", "Kazi");\nPerson.getFullName = function() {\n  return `${this.firstName} ${this.lastName}`;\n};\n\nconsole.log(member.getFullName());',
     options: [
       {
         correct: true,
@@ -258,7 +258,7 @@ export const quizData = [
       },
       {
         correct: false,
-        text: "`Lydia Hallie`",
+        text: "`Rasel Kazi`",
       },
       {
         correct: false,
@@ -271,23 +271,23 @@ export const quizData = [
   {
     id: 12,
     title: "12. What's the output?",
-    code: 'function Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst lydia = new Person("Lydia", "Hallie");\nconst sarah = Person("Sarah", "Smith");\n\nconsole.log(lydia);\nconsole.log(sarah);',
+    code: 'function Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst Rasel = new Person("Rasel", "Kazi");\nconst sarah = Person("Sarah", "Smith");\n\nconsole.log(Rasel);\nconsole.log(sarah);',
     options: [
       {
         correct: true,
-        text: '`Person {firstName: "Lydia", lastName: "Hallie"}` and `undefined`',
+        text: '`Person {firstName: "Rasel", lastName: "Kazi"}` and `undefined`',
       },
       {
         correct: false,
-        text: '`Person {firstName: "Lydia", lastName: "Hallie"}` and `Person {firstName: "Sarah", lastName: "Smith"}`',
+        text: '`Person {firstName: "Rasel", lastName: "Kazi"}` and `Person {firstName: "Sarah", lastName: "Smith"}`',
       },
       {
         correct: false,
-        text: '`Person {firstName: "Lydia", lastName: "Hallie"}` and `{}`',
+        text: '`Person {firstName: "Rasel", lastName: "Kazi"}` and `{}`',
       },
       {
         correct: false,
-        text: '`Person {firstName: "Lydia", lastName: "Hallie"}` and `ReferenceError`',
+        text: '`Person {firstName: "Rasel", lastName: "Kazi"}` and `ReferenceError`',
       },
     ],
     explanation:
@@ -388,19 +388,19 @@ export const quizData = [
   {
     id: 17,
     title: "17. What's the output?",
-    code: 'function getPersonInfo(one, two, three) {\n  console.log(one);\n  console.log(two);\n  console.log(three);\n}\n\nconst person = "Lydia";\nconst age = 21;\n\ngetPersonInfo`${person} is ${age} years old`;',
+    code: 'function getPersonInfo(one, two, three) {\n  console.log(one);\n  console.log(two);\n  console.log(three);\n}\n\nconst person = "Rasel";\nconst age = 21;\n\ngetPersonInfo`${person} is ${age} years old`;',
     options: [
       {
         correct: false,
-        text: '`"Lydia"` `21` `["", " is ", " years old"]`',
+        text: '`"Rasel"` `21` `["", " is ", " years old"]`',
       },
       {
         correct: true,
-        text: '`["", " is ", " years old"]` `"Lydia"` `21`',
+        text: '`["", " is ", " years old"]` `"Rasel"` `21`',
       },
       {
         correct: false,
-        text: '`"Lydia"` `["", " is ", " years old"]` `21`',
+        text: '`"Rasel"` `["", " is ", " years old"]` `21`',
       },
     ],
     explanation:
@@ -652,11 +652,11 @@ export const quizData = [
   {
     id: 28,
     title: "28. What's the output?",
-    code: 'String.prototype.giveLydiaPizza = () => {\n  return "Just give Lydia pizza already!";\n};\n\nconst name = "Lydia";\n\nname.giveLydiaPizza();',
+    code: 'String.prototype.giveRaselPizza = () => {\n  return "Just give Rasel pizza already!";\n};\n\nconst name = "Rasel";\n\nname.giveRaselPizza();',
     options: [
       {
         correct: true,
-        text: '`"Just give Lydia pizza already!"`',
+        text: '`"Just give Rasel pizza already!"`',
       },
       {
         correct: false,
@@ -777,11 +777,11 @@ export const quizData = [
   {
     id: 33,
     title: "33. What's the output?",
-    code: 'const person = { name: "Lydia" };\n\nfunction sayHi(age) {\n  return `${this.name} is ${age}`;\n}\n\nconsole.log(sayHi.call(person, 21));\nconsole.log(sayHi.bind(person, 21));',
+    code: 'const person = { name: "Rasel" };\n\nfunction sayHi(age) {\n  return `${this.name} is ${age}`;\n}\n\nconsole.log(sayHi.call(person, 21));\nconsole.log(sayHi.bind(person, 21));',
     options: [
       {
         correct: false,
-        text: "`undefined is 21` `Lydia is 21`",
+        text: "`undefined is 21` `Rasel is 21`",
       },
       {
         correct: false,
@@ -789,11 +789,11 @@ export const quizData = [
       },
       {
         correct: false,
-        text: "`Lydia is 21` `Lydia is 21`",
+        text: "`Rasel is 21` `Rasel is 21`",
       },
       {
         correct: true,
-        text: "`Lydia is 21` `function`",
+        text: "`Rasel is 21` `function`",
       },
     ],
     explanation:
@@ -1027,7 +1027,7 @@ export const quizData = [
   {
     id: 43,
     title: "43. What does this return?",
-    code: '[..."Lydia"];',
+    code: '[..."Rasel"];',
     options: [
       {
         correct: true,
@@ -1035,11 +1035,11 @@ export const quizData = [
       },
       {
         correct: false,
-        text: '`["Lydia"]`',
+        text: '`["Rasel"]`',
       },
       {
         correct: false,
-        text: '`[[], "Lydia"]`',
+        text: '`[[], "Rasel"]`',
       },
       {
         correct: false,
@@ -1102,7 +1102,7 @@ export const quizData = [
   {
     id: 46,
     title: "46. What's the output?",
-    code: 'let person = { name: "Lydia" };\nconst members = [person];\nperson = null;\n\nconsole.log(members);',
+    code: 'let person = { name: "Rasel" };\nconst members = [person];\nperson = null;\n\nconsole.log(members);',
     options: [
       {
         correct: false,
@@ -1118,7 +1118,7 @@ export const quizData = [
       },
       {
         correct: true,
-        text: '`[{ name: "Lydia" }]`',
+        text: '`[{ name: "Rasel" }]`',
       },
     ],
     explanation:
@@ -1127,11 +1127,11 @@ export const quizData = [
   {
     id: 47,
     title: "47. What's the output?",
-    code: 'const person = {\n  name: "Lydia",\n  age: 21\n};\n\nfor (const item in person) {\n  console.log(item);\n}',
+    code: 'const person = {\n  name: "Rasel",\n  age: 21\n};\n\nfor (const item in person) {\n  console.log(item);\n}',
     options: [
       {
         correct: false,
-        text: '`{ name: "Lydia" }, { age: 21 }`',
+        text: '`{ name: "Rasel" }, { age: 21 }`',
       },
       {
         correct: true,
@@ -1139,11 +1139,11 @@ export const quizData = [
       },
       {
         correct: false,
-        text: '`"Lydia", 21`',
+        text: '`"Rasel", 21`',
       },
       {
         correct: false,
-        text: '`["name", "Lydia"], ["age", 21]`',
+        text: '`["name", "Rasel"], ["age", 21]`',
       },
     ],
     explanation:
@@ -1227,11 +1227,11 @@ export const quizData = [
   {
     id: 51,
     title: "51. What's the output?",
-    code: 'function getInfo(member, year) {\n  member.name = "Lydia";\n  year = "1998";\n}\n\nconst person = { name: "Sarah" };\nconst birthYear = "1997";\n\ngetInfo(person, birthYear);\n\nconsole.log(person, birthYear);',
+    code: 'function getInfo(member, year) {\n  member.name = "Rasel";\n  year = "1998";\n}\n\nconst person = { name: "Sarah" };\nconst birthYear = "1997";\n\ngetInfo(person, birthYear);\n\nconsole.log(person, birthYear);',
     options: [
       {
         correct: true,
-        text: '`{ name: "Lydia" }, "1997"`',
+        text: '`{ name: "Rasel" }, "1997"`',
       },
       {
         correct: false,
@@ -1239,7 +1239,7 @@ export const quizData = [
       },
       {
         correct: false,
-        text: '`{ name: "Lydia" }, "1998"`',
+        text: '`{ name: "Rasel" }, "1998"`',
       },
       {
         correct: false,
@@ -1247,7 +1247,7 @@ export const quizData = [
       },
     ],
     explanation:
-      'Arguments are passed by _value_, unless their value is an object, then they\'re passed by _reference_. `birthYear` is passed by value, since it\'s a string, not an object. When we pass arguments by value, a _copy_ of that value is created (see question 46).\n\nThe variable `birthYear` has a reference to the value `"1997"`. The argument `year` also has a reference to the value `"1997"`, but it\'s not the same value as `birthYear` has a reference to. When we update the value of `year` by setting `year` equal to `"1998"`, we are only updating the value of `year`. `birthYear` is still equal to `"1997"`.\n\nThe value of `person` is an object. The argument `member` has a (copied) reference to the _same_ object. When we modify a property of the object `member` has a reference to, the value of `person` will also be modified, since they both have a reference to the same object. `person`\'s `name` property is now equal to the value `"Lydia"`',
+      'Arguments are passed by _value_, unless their value is an object, then they\'re passed by _reference_. `birthYear` is passed by value, since it\'s a string, not an object. When we pass arguments by value, a _copy_ of that value is created (see question 46).\n\nThe variable `birthYear` has a reference to the value `"1997"`. The argument `year` also has a reference to the value `"1997"`, but it\'s not the same value as `birthYear` has a reference to. When we update the value of `year` by setting `year` equal to `"1998"`, we are only updating the value of `year`. `birthYear` is still equal to `"1997"`.\n\nThe value of `person` is an object. The argument `member` has a (copied) reference to the _same_ object. When we modify a property of the object `member` has a reference to, the value of `person` will also be modified, since they both have a reference to the same object. `person`\'s `name` property is now equal to the value `"Rasel"`',
   },
   {
     id: 52,
@@ -1402,7 +1402,7 @@ export const quizData = [
   {
     id: 58,
     title: "58. What's the output?",
-    code: 'const name = "Lydia";\nage = 21;\n\nconsole.log(delete name);\nconsole.log(delete age);',
+    code: 'const name = "Rasel";\nage = 21;\n\nconsole.log(delete name);\nconsole.log(delete age);',
     options: [
       {
         correct: true,
@@ -1410,7 +1410,7 @@ export const quizData = [
       },
       {
         correct: false,
-        text: '`"Lydia"`, `21`',
+        text: '`"Rasel"`, `21`',
       },
       {
         correct: false,
@@ -1452,19 +1452,19 @@ export const quizData = [
   {
     id: 60,
     title: "60. What's the output?",
-    code: 'const user = { name: "Lydia", age: 21 };\nconst admin = { admin: true, ...user };\n\nconsole.log(admin);',
+    code: 'const user = { name: "Rasel", age: 21 };\nconst admin = { admin: true, ...user };\n\nconsole.log(admin);',
     options: [
       {
         correct: false,
-        text: '`{ admin: true, user: { name: "Lydia", age: 21 } }`',
+        text: '`{ admin: true, user: { name: "Rasel", age: 21 } }`',
       },
       {
         correct: true,
-        text: '`{ admin: true, name: "Lydia", age: 21 }`',
+        text: '`{ admin: true, name: "Rasel", age: 21 }`',
       },
       {
         correct: false,
-        text: '`{ admin: true, user: ["Lydia", 21] }`',
+        text: '`{ admin: true, user: ["Rasel", 21] }`',
       },
       {
         correct: false,
@@ -1472,28 +1472,28 @@ export const quizData = [
       },
     ],
     explanation:
-      'It\'s possible to combine objects using the spread operator `...`. It lets you create copies of the key/value pairs of one object, and add them to another object. In this case, we create copies of the `user` object, and add them to the `admin` object. The `admin` object now contains the copied key/value pairs, which results in `{ admin: true, name: "Lydia", age: 21 }`.',
+      'It\'s possible to combine objects using the spread operator `...`. It lets you create copies of the key/value pairs of one object, and add them to another object. In this case, we create copies of the `user` object, and add them to the `admin` object. The `admin` object now contains the copied key/value pairs, which results in `{ admin: true, name: "Rasel", age: 21 }`.',
   },
   {
     id: 61,
     title: "61. What's the output?",
-    code: 'const person = { name: "Lydia" };\n\nObject.defineProperty(person, "age", { value: 21 });\n\nconsole.log(person);\nconsole.log(Object.keys(person));',
+    code: 'const person = { name: "Rasel" };\n\nObject.defineProperty(person, "age", { value: 21 });\n\nconsole.log(person);\nconsole.log(Object.keys(person));',
     options: [
       {
         correct: false,
-        text: '`{ name: "Lydia", age: 21 }`, `["name", "age"]`',
+        text: '`{ name: "Rasel", age: 21 }`, `["name", "age"]`',
       },
       {
         correct: true,
-        text: '`{ name: "Lydia", age: 21 }`, `["name"]`',
+        text: '`{ name: "Rasel", age: 21 }`, `["name"]`',
       },
       {
         correct: false,
-        text: '`{ name: "Lydia"}`, `["name", "age"]`',
+        text: '`{ name: "Rasel"}`, `["name", "age"]`',
       },
       {
         correct: false,
-        text: '`{ name: "Lydia"}`, `["age"]`',
+        text: '`{ name: "Rasel"}`, `["age"]`',
       },
     ],
     explanation:
@@ -1502,7 +1502,7 @@ export const quizData = [
   {
     id: 62,
     title: "62. What's the output?",
-    code: 'const settings = {\n  username: "lydiahallie",\n  level: 19,\n  health: 90\n};\n\nconst data = JSON.stringify(settings, ["level", "health"]);\nconsole.log(data);',
+    code: 'const settings = {\n  username: "RaselKazi",\n  level: 19,\n  health: 90\n};\n\nconst data = JSON.stringify(settings, ["level", "health"]);\nconsole.log(data);',
     options: [
       {
         correct: true,
@@ -1510,7 +1510,7 @@ export const quizData = [
       },
       {
         correct: false,
-        text: '`"{"username": "lydiahallie"}"`',
+        text: '`"{"username": "RaselKazi"}"`',
       },
       {
         correct: false,
@@ -1518,7 +1518,7 @@ export const quizData = [
       },
       {
         correct: false,
-        text: '`"{"username": "lydiahallie", "level":19, "health":90}"`',
+        text: '`"{"username": "RaselKazi", "level":19, "health":90}"`',
       },
     ],
     explanation:
@@ -1678,27 +1678,27 @@ export const quizData = [
   {
     id: 69,
     title: "69. What's the output?",
-    code: 'const name = "Lydia Hallie"\nconsole.log(name.padStart(13))\nconsole.log(name.padStart(2))',
+    code: 'const name = "Rasel Kazi"\nconsole.log(name.padStart(13))\nconsole.log(name.padStart(2))',
     options: [
       {
         correct: false,
-        text: '`"Lydia Hallie"`, `"Lydia Hallie"`',
+        text: '`"Rasel Kazi"`, `"Rasel Kazi"`',
       },
       {
         correct: false,
-        text: '`"           Lydia Hallie"`, `"  Lydia Hallie"` (`"[13x whitespace]Lydia Hallie"`, `"[2x whitespace]Lydia Hallie"`)',
+        text: '`"           Rasel Kazi"`, `"  Rasel Kazi"` (`"[13x whitespace]Rasel Kazi"`, `"[2x whitespace]Rasel Kazi"`)',
       },
       {
         correct: true,
-        text: '`" Lydia Hallie"`, `"Lydia Hallie"` (`"[1x whitespace]Lydia Hallie"`, `"Lydia Hallie"`)',
+        text: '`" Rasel Kazi"`, `"Rasel Kazi"` (`"[1x whitespace]Rasel Kazi"`, `"Rasel Kazi"`)',
       },
       {
         correct: false,
-        text: '`"Lydia Hallie"`, `"Lyd"`,',
+        text: '`"Rasel Kazi"`, `"Lyd"`,',
       },
     ],
     explanation:
-      'With the `padStart` method, we can add padding to the beginning of a string. The value passed to this method is the _total_ length of the string together with the padding. The string `"Lydia Hallie"` has a length of `12`. `name.padStart(13)` inserts 1 space at the start of the string, because 12 + 1 is 13.\n\nIf the argument passed to the `padStart` method is smaller than the length of the array, no padding will be added.',
+      'With the `padStart` method, we can add padding to the beginning of a string. The value passed to this method is the _total_ length of the string together with the padding. The string `"Rasel Kazi"` has a length of `12`. `name.padStart(13)` inserts 1 space at the start of the string, because 12 + 1 is 13.\n\nIf the argument passed to the `padStart` method is smaller than the length of the array, no padding will be added.',
   },
   {
     id: 70,
@@ -1854,11 +1854,11 @@ export const quizData = [
   {
     id: 76,
     title: "76. What's the output?",
-    code: 'const { name: myName } = { name: "Lydia" };\n\nconsole.log(name);',
+    code: 'const { name: myName } = { name: "Rasel" };\n\nconsole.log(name);',
     options: [
       {
         correct: false,
-        text: '`"Lydia"`',
+        text: '`"Rasel"`',
       },
       {
         correct: false,
@@ -1874,7 +1874,7 @@ export const quizData = [
       },
     ],
     explanation:
-      'When we unpack the property `name` from the object on the right-hand side, we assign its value `"Lydia"` to a variable with the name `myName`.\n\nWith `{ name: myName }`, we tell JavaScript that we want to create a new variable called `myName` with the value of the `name` property on the right-hand side.\n\nSince we try to log `name`, a variable that is not defined, a ReferenceError gets thrown.',
+      'When we unpack the property `name` from the object on the right-hand side, we assign its value `"Rasel"` to a variable with the name `myName`.\n\nWith `{ name: myName }`, we tell JavaScript that we want to create a new variable called `myName` with the value of the `name` property on the right-hand side.\n\nSince we try to log `name`, a variable that is not defined, a ReferenceError gets thrown.',
   },
   {
     id: 77,
@@ -1991,7 +1991,7 @@ export const quizData = [
       },
     ],
     explanation:
-      "By default, arguments have the value of `undefined`, unless a value has been passed to the function. In this case, we didn't pass a value for the `name` argument. `name` is equal to `undefined` which gets logged.\n\nIn ES6, we can overwrite this default `undefined` value with default parameters. For example:\n\n`function sayHi(name = \"Lydia\") { ... }`\n\nIn this case, if we didn't pass a value or if we passed `undefined`, `name` would always be equal to the string `Lydia`",
+      "By default, arguments have the value of `undefined`, unless a value has been passed to the function. In this case, we didn't pass a value for the `name` argument. `name` is equal to `undefined` which gets logged.\n\nIn ES6, we can overwrite this default `undefined` value with default parameters. For example:\n\n`function sayHi(name = \"Rasel\") { ... }`\n\nIn this case, if we didn't pass a value or if we passed `undefined`, `name` would always be equal to the string `Rasel`",
   },
   {
     id: 82,
@@ -2021,19 +2021,19 @@ export const quizData = [
   {
     id: 83,
     title: "83. What is the output?",
-    code: 'const person = {\n  name: "Lydia",\n  age: 21\n}\n\nlet city = person.city\ncity = "Amsterdam"\n\nconsole.log(person)',
+    code: 'const person = {\n  name: "Rasel",\n  age: 21\n}\n\nlet city = person.city\ncity = "Amsterdam"\n\nconsole.log(person)',
     options: [
       {
         correct: true,
-        text: '`{ name: "Lydia", age: 21 }`',
+        text: '`{ name: "Rasel", age: 21 }`',
       },
       {
         correct: false,
-        text: '`{ name: "Lydia", age: 21, city: "Amsterdam" }`',
+        text: '`{ name: "Rasel", age: 21, city: "Amsterdam" }`',
       },
       {
         correct: false,
-        text: '`{ name: "Lydia", age: 21, city: undefined }`',
+        text: '`{ name: "Rasel", age: 21, city: undefined }`',
       },
       {
         correct: false,
@@ -2172,11 +2172,11 @@ export const quizData = [
   {
     id: 89,
     title: "89. What's the output?",
-    code: '// module.js \nexport default () => "Hello world"\nexport const name = "Lydia"\n\n// index.js \nimport * as data from "./module"\n\nconsole.log(data)',
+    code: '// module.js \nexport default () => "Hello world"\nexport const name = "Rasel"\n\n// index.js \nimport * as data from "./module"\n\nconsole.log(data)',
     options: [
       {
         correct: true,
-        text: '`{ default: function default(), name: "Lydia" }`',
+        text: '`{ default: function default(), name: "Rasel" }`',
       },
       {
         correct: false,
@@ -2184,7 +2184,7 @@ export const quizData = [
       },
       {
         correct: false,
-        text: '`{ default: "Hello world", name: "Lydia" }`',
+        text: '`{ default: "Hello world", name: "Rasel" }`',
       },
       {
         correct: false,
@@ -2192,7 +2192,7 @@ export const quizData = [
       },
     ],
     explanation:
-      'With the `import * as name` syntax, we import _all exports_ from the `module.js` file into the `index.js` file as a new object called `data` is created. In the `module.js` file, there are two exports: the default export, and a named export. The default export is a function which returns the string `"Hello World"`, and the named export is a variable called `name` which has the value of the string `"Lydia"`. \n\nThe `data` object has a `default` property for the default export, other properties have the names of the named exports and their corresponding values.',
+      'With the `import * as name` syntax, we import _all exports_ from the `module.js` file into the `index.js` file as a new object called `data` is created. In the `module.js` file, there are two exports: the default export, and a named export. The default export is a function which returns the string `"Hello World"`, and the named export is a variable called `name` which has the value of the string `"Rasel"`. \n\nThe `data` object has a `default` property for the default export, other properties have the names of the named exports and their corresponding values.',
   },
   {
     id: 90,
@@ -2247,7 +2247,7 @@ export const quizData = [
   {
     id: 92,
     title: "92. What's the output?",
-    code: 'function giveLydiaPizza() {\n  return "Here is pizza!"\n}\n\nconst giveLydiaChocolate = () => "Here\'s chocolate... now go hit the gym already."\n\nconsole.log(giveLydiaPizza.prototype)\nconsole.log(giveLydiaChocolate.prototype)',
+    code: 'function giveRaselPizza() {\n  return "Here is pizza!"\n}\n\nconst giveRaselChocolate = () => "Here\'s chocolate... now go hit the gym already."\n\nconsole.log(giveRaselPizza.prototype)\nconsole.log(giveRaselChocolate.prototype)',
     options: [
       {
         correct: false,
@@ -2267,20 +2267,20 @@ export const quizData = [
       },
     ],
     explanation:
-      "Regular functions, such as the `giveLydiaPizza` function, have a `prototype` property, which is an object (prototype object) with a `constructor` property. Arrow functions however, such as the `giveLydiaChocolate` function, do not have this `prototype` property. `undefined` gets returned when trying to access the `prototype` property using `giveLydiaChocolate.prototype`.",
+      "Regular functions, such as the `giveRaselPizza` function, have a `prototype` property, which is an object (prototype object) with a `constructor` property. Arrow functions however, such as the `giveRaselChocolate` function, do not have this `prototype` property. `undefined` gets returned when trying to access the `prototype` property using `giveRaselChocolate.prototype`.",
   },
   {
     id: 93,
     title: "93. What's the output?",
-    code: 'const person = {\n  name: "Lydia",\n  age: 21\n}\n\nfor (const [x, y] of Object.entries(person)) {\n  console.log(x, y)\n}',
+    code: 'const person = {\n  name: "Rasel",\n  age: 21\n}\n\nfor (const [x, y] of Object.entries(person)) {\n  console.log(x, y)\n}',
     options: [
       {
         correct: true,
-        text: "`name` `Lydia` and `age` `21`",
+        text: "`name` `Rasel` and `age` `21`",
       },
       {
         correct: false,
-        text: '`["name", "Lydia"]` and `["age", 21]`',
+        text: '`["name", "Rasel"]` and `["age", 21]`',
       },
       {
         correct: false,
@@ -2292,7 +2292,7 @@ export const quizData = [
       },
     ],
     explanation:
-      '`Object.entries(person)` returns an array of nested arrays, containing the keys and objects:\n\n`[ [ \'name\', \'Lydia\' ], [ \'age\', 21 ] ]` \n\nUsing the `for-of` loop, we can iterate over each element in the array, the subarrays in this case. We can destructure the subarrays instantly in the for-of loop, using `const [x, y]`. `x` is equal to the first element in the subarray, `y` is equal to the second element in the subarray. \n\nThe first subarray is `[ "name", "Lydia" ]`, with `x` equal to `"name"`, and `y` equal to `"Lydia"`, which get logged.\nThe second subarray is `[ "age", 21 ]`, with `x` equal to `"age"`, and `y` equal to `21`, which get logged.',
+      '`Object.entries(person)` returns an array of nested arrays, containing the keys and objects:\n\n`[ [ \'name\', \'Rasel\' ], [ \'age\', 21 ] ]` \n\nUsing the `for-of` loop, we can iterate over each element in the array, the subarrays in this case. We can destructure the subarrays instantly in the for-of loop, using `const [x, y]`. `x` is equal to the first element in the subarray, `y` is equal to the second element in the subarray. \n\nThe first subarray is `[ "name", "Rasel" ]`, with `x` equal to `"name"`, and `y` equal to `"Rasel"`, which get logged.\nThe second subarray is `[ "age", 21 ]`, with `x` equal to `"age"`, and `y` equal to `21`, which get logged.',
   },
   {
     id: 94,
@@ -2347,11 +2347,11 @@ export const quizData = [
   {
     id: 96,
     title: "96. What's the output?",
-    code: 'class Person {\n  constructor() {\n    this.name = "Lydia"\n  }\n}\n\nPerson = class AnotherPerson {\n  constructor() {\n    this.name = "Sarah"\n  }\n}\n\nconst member = new Person()\nconsole.log(member.name)',
+    code: 'class Person {\n  constructor() {\n    this.name = "Rasel"\n  }\n}\n\nPerson = class AnotherPerson {\n  constructor() {\n    this.name = "Sarah"\n  }\n}\n\nconst member = new Person()\nconsole.log(member.name)',
     options: [
       {
         correct: false,
-        text: '`"Lydia"`',
+        text: '`"Rasel"`',
       },
       {
         correct: true,
@@ -2397,7 +2397,7 @@ export const quizData = [
   {
     id: 98,
     title: "98. What's the output?",
-    code: 'const getList = ([x, ...y]) => [x, y]\nconst getUser = user => { name: user.name, age: user.age }\n\nconst list = [1, 2, 3, 4]\nconst user = { name: "Lydia", age: 21 }\n\nconsole.log(getList(list))\nconsole.log(getUser(user))',
+    code: 'const getList = ([x, ...y]) => [x, y]\nconst getUser = user => { name: user.name, age: user.age }\n\nconst list = [1, 2, 3, 4]\nconst user = { name: "Rasel", age: 21 }\n\nconsole.log(getList(list))\nconsole.log(getUser(user))',
     options: [
       {
         correct: true,
@@ -2405,15 +2405,15 @@ export const quizData = [
       },
       {
         correct: false,
-        text: '`[1, [2, 3, 4]]` and `{ name: "Lydia", age: 21 }`',
+        text: '`[1, [2, 3, 4]]` and `{ name: "Rasel", age: 21 }`',
       },
       {
         correct: false,
-        text: '`[1, 2, 3, 4]` and `{ name: "Lydia", age: 21 }`',
+        text: '`[1, 2, 3, 4]` and `{ name: "Rasel", age: 21 }`',
       },
       {
         correct: false,
-        text: '`Error` and `{ name: "Lydia", age: 21 }`',
+        text: '`Error` and `{ name: "Rasel", age: 21 }`',
       },
     ],
     explanation:
@@ -2422,7 +2422,7 @@ export const quizData = [
   {
     id: 99,
     title: "99. What's the output?",
-    code: 'const name = "Lydia"\n\nconsole.log(name())',
+    code: 'const name = "Rasel"\n\nconsole.log(name())',
     options: [
       {
         correct: false,
@@ -2522,7 +2522,7 @@ export const quizData = [
   {
     id: 103,
     title: "103. What's the value of output?",
-    code: 'const set = new Set()\n\nset.add(1)\nset.add("Lydia")\nset.add({ name: "Lydia" })\n\nfor (let item of set) {\n  console.log(item + 2)\n}',
+    code: 'const set = new Set()\n\nset.add(1)\nset.add("Rasel")\nset.add({ name: "Rasel" })\n\nfor (let item of set) {\n  console.log(item + 2)\n}',
     options: [
       {
         correct: false,
@@ -2534,15 +2534,15 @@ export const quizData = [
       },
       {
         correct: true,
-        text: "`3`, `Lydia2`, `[object Object]2`",
+        text: "`3`, `Rasel2`, `[object Object]2`",
       },
       {
         correct: false,
-        text: '`"12"`, `Lydia2`, `[object Object]2`',
+        text: '`"12"`, `Rasel2`, `[object Object]2`',
       },
     ],
     explanation:
-      'The `+` operator is not only used for adding numerical values, but we can also use it to concatenate strings. Whenever the JavaScript engine sees that one or more values are not a number, it coerces the number into a string. \n\nThe first one is `1`, which is a numerical value. `1 + 2` returns the number 3.\n\nHowever, the second one is a string `"Lydia"`. `"Lydia"` is a string and `2` is a number: `2` gets coerced into a string. `"Lydia"` and `"2"` get concatenated, which results in the string `"Lydia2"`. \n\n`{ name: "Lydia" }` is an object. Neither a number nor an object is a string, so it stringifies both. Whenever we stringify a regular object, it becomes `"[object Object]"`. `"[object Object]"` concatenated with `"2"` becomes `"[object Object]2"`.',
+      'The `+` operator is not only used for adding numerical values, but we can also use it to concatenate strings. Whenever the JavaScript engine sees that one or more values are not a number, it coerces the number into a string. \n\nThe first one is `1`, which is a numerical value. `1 + 2` returns the number 3.\n\nHowever, the second one is a string `"Rasel"`. `"Rasel"` is a string and `2` is a number: `2` gets coerced into a string. `"Rasel"` and `"2"` get concatenated, which results in the string `"Rasel2"`. \n\n`{ name: "Rasel" }` is an object. Neither a number nor an object is a string, so it stringifies both. Whenever we stringify a regular object, it becomes `"[object Object]"`. `"[object Object]"` concatenated with `"2"` becomes `"[object Object]2"`.',
   },
   {
     id: 104,
@@ -2572,7 +2572,7 @@ export const quizData = [
   {
     id: 105,
     title: "105. What's its value?",
-    code: 'function compareMembers(person1, person2 = person) {\n  if (person1 !== person2) {\n    console.log("Not the same!")\n  } else {\n    console.log("They are the same!")\n  }\n}\n\nconst person = { name: "Lydia" }\n\ncompareMembers(person)',
+    code: 'function compareMembers(person1, person2 = person) {\n  if (person1 !== person2) {\n    console.log("Not the same!")\n  } else {\n    console.log("They are the same!")\n  }\n}\n\nconst person = { name: "Rasel" }\n\ncompareMembers(person)',
     options: [
       {
         correct: false,
@@ -2709,16 +2709,16 @@ export const quizData = [
       },
     ],
     explanation:
-      "With the `JSON.parse()` method, we can parse JSON string to a JavaScript value. \n\n```javascript\n// Stringifying a number into valid JSON, then parsing the JSON string to a JavaScript value:\nconst jsonNumber = JSON.stringify(4) // '4'\nJSON.parse(jsonNumber) // 4\n\n// Stringifying an array value into valid JSON, then parsing the JSON string to a JavaScript value:\nconst jsonArray = JSON.stringify([1, 2, 3]) // '[1, 2, 3]'\nJSON.parse(jsonArray) // [1, 2, 3]\n\n// Stringifying an object  into valid JSON, then parsing the JSON string to a JavaScript value:\nconst jsonArray = JSON.stringify({ name: \"Lydia\" }) // '{\"name\":\"Lydia\"}'\nJSON.parse(jsonArray) // { name: 'Lydia' }\n```",
+      "With the `JSON.parse()` method, we can parse JSON string to a JavaScript value. \n\n```javascript\n// Stringifying a number into valid JSON, then parsing the JSON string to a JavaScript value:\nconst jsonNumber = JSON.stringify(4) // '4'\nJSON.parse(jsonNumber) // 4\n\n// Stringifying an array value into valid JSON, then parsing the JSON string to a JavaScript value:\nconst jsonArray = JSON.stringify([1, 2, 3]) // '[1, 2, 3]'\nJSON.parse(jsonArray) // [1, 2, 3]\n\n// Stringifying an object  into valid JSON, then parsing the JSON string to a JavaScript value:\nconst jsonArray = JSON.stringify({ name: \"Rasel\" }) // '{\"name\":\"Rasel\"}'\nJSON.parse(jsonArray) // { name: 'Rasel' }\n```",
   },
   {
     id: 111,
     title: "111. What's the output?",
-    code: "let name = 'Lydia'\n\nfunction getName() {\n  console.log(name)\n  let name = 'Sarah'\n}\n\ngetName()",
+    code: "let name = 'Rasel'\n\nfunction getName() {\n  console.log(name)\n  let name = 'Sarah'\n}\n\ngetName()",
     options: [
       {
         correct: false,
-        text: "Lydia",
+        text: "Rasel",
       },
       {
         correct: false,
@@ -2734,7 +2734,7 @@ export const quizData = [
       },
     ],
     explanation:
-      "Each function has its own _execution context_ (or _scope_). The `getName` function first looks within its own context (scope) to see if it contains the variable `name` we're trying to access. In this case, the `getName` function contains its own `name` variable: we declare the variable `name` with the `let` keyword, and with the value of `'Sarah'`. \n\nVariables with the `let` keyword (and `const`) are hoisted, but unlike `var`, don't get <i>initialized</i>. They are not accessible before the line we declare (initialize) them. This is called the \"temporal dead zone\". When we try to access the variables before they are declared, JavaScript throws a `ReferenceError`. \n\nIf we wouldn't have declared the `name` variable within the `getName` function, the javascript engine would've looked down the _scope chain_. The outer scope has a variable called `name` with the value of `Lydia`. In that case, it would've logged `Lydia`. \n\n```javascript\nlet name = 'Lydia'\n\nfunction getName() {\n  console.log(name)\n}\n\ngetName() // Lydia\n```",
+      "Each function has its own _execution context_ (or _scope_). The `getName` function first looks within its own context (scope) to see if it contains the variable `name` we're trying to access. In this case, the `getName` function contains its own `name` variable: we declare the variable `name` with the `let` keyword, and with the value of `'Sarah'`. \n\nVariables with the `let` keyword (and `const`) are hoisted, but unlike `var`, don't get <i>initialized</i>. They are not accessible before the line we declare (initialize) them. This is called the \"temporal dead zone\". When we try to access the variables before they are declared, JavaScript throws a `ReferenceError`. \n\nIf we wouldn't have declared the `name` variable within the `getName` function, the javascript engine would've looked down the _scope chain_. The outer scope has a variable called `name` with the value of `Rasel`. In that case, it would've logged `Rasel`. \n\n```javascript\nlet name = 'Rasel'\n\nfunction getName() {\n  console.log(name)\n}\n\ngetName() // Rasel\n```",
   },
   {
     id: 112,
@@ -2839,7 +2839,7 @@ export const quizData = [
   {
     id: 116,
     title: "116. What's the output?",
-    code: 'const person = {\n  name: "Lydia",\n  age: 21\n}\n\nconst changeAge = (x = { ...person }) => x.age += 1\nconst changeAgeAndName = (x = { ...person }) => {\n  x.age += 1\n  x.name = "Sarah"\n}\n\nchangeAge(person)\nchangeAgeAndName()\n\nconsole.log(person)',
+    code: 'const person = {\n  name: "Rasel",\n  age: 21\n}\n\nconst changeAge = (x = { ...person }) => x.age += 1\nconst changeAgeAndName = (x = { ...person }) => {\n  x.age += 1\n  x.name = "Sarah"\n}\n\nchangeAge(person)\nchangeAgeAndName()\n\nconsole.log(person)',
     options: [
       {
         correct: false,
@@ -2851,15 +2851,15 @@ export const quizData = [
       },
       {
         correct: true,
-        text: '`{name: "Lydia", age: 22}`',
+        text: '`{name: "Rasel", age: 22}`',
       },
       {
         correct: false,
-        text: '`{name: "Lydia", age: 23}`',
+        text: '`{name: "Rasel", age: 23}`',
       },
     ],
     explanation:
-      'Both the `changeAge` and `changeAgeAndName` functions have a default parameter, namely a _newly_ created object `{ ...person }`. This object has copies of all the key/values in the `person` object. \n\nFirst, we invoke the `changeAge` function and pass the `person` object as its argument. This function increases the value of the `age` property by 1. `person` is now `{ name: "Lydia", age: 22 }`.\n\nThen, we invoke the `changeAgeAndName` function, however we don\'t pass a parameter. Instead, the value of `x` is equal to a _new_ object: `{ ...person }`. Since it\'s a new object, it doesn\'t affect the values of the properties on the `person` object. `person` is still equal to `{ name: "Lydia", age: 22 }`.',
+      'Both the `changeAge` and `changeAgeAndName` functions have a default parameter, namely a _newly_ created object `{ ...person }`. This object has copies of all the key/values in the `person` object. \n\nFirst, we invoke the `changeAge` function and pass the `person` object as its argument. This function increases the value of the `age` property by 1. `person` is now `{ name: "Rasel", age: 22 }`.\n\nThen, we invoke the `changeAgeAndName` function, however we don\'t pass a parameter. Instead, the value of `x` is equal to a _new_ object: `{ ...person }`. Since it\'s a new object, it doesn\'t affect the values of the properties on the `person` object. `person` is still equal to `{ name: "Rasel", age: 22 }`.',
   },
   {
     id: 117,
@@ -2914,7 +2914,7 @@ export const quizData = [
   {
     id: 119,
     title: "119. What's the output?",
-    code: 'const person = {\n\tfirstName: "Lydia",\n\tlastName: "Hallie",\n\tpet: {\n\t\tname: "Mara",\n\t\tbreed: "Dutch Tulip Hound"\n\t},\n\tgetFullName() {\n\t\treturn `${this.firstName} ${this.lastName}`;\n\t}\n};\n\nconsole.log(person.pet?.name);\nconsole.log(person.pet?.family?.name);\nconsole.log(person.getFullName?.());\nconsole.log(member.getLastName?.());',
+    code: 'const person = {\n\tfirstName: "Rasel",\n\tlastName: "Kazi",\n\tpet: {\n\t\tname: "Mara",\n\t\tbreed: "Dutch Tulip Hound"\n\t},\n\tgetFullName() {\n\t\treturn `${this.firstName} ${this.lastName}`;\n\t}\n};\n\nconsole.log(person.pet?.name);\nconsole.log(person.pet?.family?.name);\nconsole.log(person.getFullName?.());\nconsole.log(member.getLastName?.());',
     options: [
       {
         correct: false,
@@ -2922,11 +2922,11 @@ export const quizData = [
       },
       {
         correct: true,
-        text: "`Mara` `undefined` `Lydia Hallie` `undefined`",
+        text: "`Mara` `undefined` `Rasel Kazi` `undefined`",
       },
       {
         correct: false,
-        text: "`Mara` `null` `Lydia Hallie` `null`",
+        text: "`Mara` `null` `Rasel Kazi` `null`",
       },
       {
         correct: false,
@@ -2934,7 +2934,7 @@ export const quizData = [
       },
     ],
     explanation:
-      "With the optional chaining operator `?.`, we no longer have to explicitly check whether the deeper nested values are valid or not. If we're trying to access a property on an `undefined` or `null` value (_nullish_), the expression short-circuits and returns `undefined`.\n\n`person.pet?.name`: `person` has a property named `pet`: `person.pet` is not nullish. It has a property called `name`, and returns `Mara`.\n`person.pet?.family?.name`: `person` has a property named `pet`: `person.pet` is not nullish. `pet` does _not_ have a property called `family`, `person.pet.family` is nullish. The expression returns `undefined`.\n`person.getFullName?.()`: `person` has a property named `getFullName`: `person.getFullName()` is not nullish and can get invoked, which returns `Lydia Hallie`.\n`member.getLastName?.()`: `member` is not defined: `member.getLastName()` is nullish. The expression returns `undefined`.",
+      "With the optional chaining operator `?.`, we no longer have to explicitly check whether the deeper nested values are valid or not. If we're trying to access a property on an `undefined` or `null` value (_nullish_), the expression short-circuits and returns `undefined`.\n\n`person.pet?.name`: `person` has a property named `pet`: `person.pet` is not nullish. It has a property called `name`, and returns `Mara`.\n`person.pet?.family?.name`: `person` has a property named `pet`: `person.pet` is not nullish. `pet` does _not_ have a property called `family`, `person.pet.family` is nullish. The expression returns `undefined`.\n`person.getFullName?.()`: `person` has a property named `getFullName`: `person.getFullName()` is not nullish and can get invoked, which returns `Rasel Kazi`.\n`member.getLastName?.()`: `member` is not defined: `member.getLastName()` is nullish. The expression returns `undefined`.",
   },
   {
     id: 120,
@@ -2989,7 +2989,7 @@ export const quizData = [
   {
     id: 122,
     title: "122. What's the output?",
-    code: 'const name = "Lydia Hallie";\n\nconsole.log(!typeof name === "object");\nconsole.log(!typeof name === "string");',
+    code: 'const name = "Rasel Kazi";\n\nconsole.log(!typeof name === "object");\nconsole.log(!typeof name === "string");',
     options: [
       {
         correct: false,
@@ -3139,7 +3139,7 @@ export const quizData = [
   {
     id: 128,
     title: "128. What's the output?",
-    code: 'const name = "Lydia Hallie";\nconst age = 21;\n\nconsole.log(Number.isNaN(name));\nconsole.log(Number.isNaN(age));\n\nconsole.log(isNaN(name));\nconsole.log(isNaN(age));',
+    code: 'const name = "Rasel Kazi";\nconst age = 21;\n\nconsole.log(Number.isNaN(name));\nconsole.log(Number.isNaN(age));\n\nconsole.log(isNaN(name));\nconsole.log(isNaN(age));',
     options: [
       {
         correct: false,
@@ -3164,7 +3164,7 @@ export const quizData = [
   {
     id: 129,
     title: "129. What's the output?",
-    code: 'const randomValue = 21;\n\nfunction getInfo() {\n\tconsole.log(typeof randomValue);\n\tconst randomValue = "Lydia Hallie";\n}\n\ngetInfo();',
+    code: 'const randomValue = 21;\n\nfunction getInfo() {\n\tconsole.log(typeof randomValue);\n\tconst randomValue = "Rasel Kazi";\n}\n\ngetInfo();',
     options: [
       {
         correct: false,
@@ -3309,12 +3309,12 @@ export const quizData = [
       },
     ],
     explanation:
-      'With the asterisk `*`, we import all exported values from that file, both default and named. If we had the following file:\n\n```javascript\n// info.js\nexport const name = "Lydia";\nexport const age = 21;\nexport default "I love JavaScript";\n\n// index.js\nimport * as info from "./info";\nconsole.log(info);\n```\n\nThe following would get logged:\n\n```javascript\n{\n  default: "I love JavaScript",\n  name: "Lydia",\n  age: 21\n}\n```\n\nFor the `sum` example, it means that the imported value `sum` looks like this:\n\n```javascript\n{ default: function sum(x) { return x + x } }\n```\n\nWe can invoke this function, by calling `sum.default`',
+      'With the asterisk `*`, we import all exported values from that file, both default and named. If we had the following file:\n\n```javascript\n// info.js\nexport const name = "Rasel";\nexport const age = 21;\nexport default "I love JavaScript";\n\n// index.js\nimport * as info from "./info";\nconsole.log(info);\n```\n\nThe following would get logged:\n\n```javascript\n{\n  default: "I love JavaScript",\n  name: "Rasel",\n  age: 21\n}\n```\n\nFor the `sum` example, it means that the imported value `sum` looks like this:\n\n```javascript\n{ default: function sum(x) { return x + x } }\n```\n\nWe can invoke this function, by calling `sum.default`',
   },
   {
     id: 135,
     title: "135. What's the output?",
-    code: 'const handler = {\n\tset: () => console.log("Added a new property!"),\n\tget: () => console.log("Accessed a property!")\n};\n\nconst person = new Proxy({}, handler);\n\nperson.name = "Lydia";\nperson.name;',
+    code: 'const handler = {\n\tset: () => console.log("Added a new property!"),\n\tget: () => console.log("Accessed a property!")\n};\n\nconst person = new Proxy({}, handler);\n\nperson.name = "Rasel";\nperson.name;',
     options: [
       {
         correct: false,
@@ -3334,12 +3334,12 @@ export const quizData = [
       },
     ],
     explanation:
-      'With a Proxy object, we can add custom behavior to an object that we pass to it as the second argument. In tis case, we pass the `handler` object which contained to properties: `set` and `get`. `set` gets invoked whenever we _set_ property values, `get` gets invoked whenever we _get_ (access) property values.\n\nThe first argument is an empty object `{}`, which is the value of `person`. To this object, the custom behavior specified in the `handler` object gets added. If we add a property to the `person` object, `set` will get invoked. If we access a property on the `person` object, `get` gets invoked.\n\nFirst, we added a new property `name` to the proxy object (`person.name = "Lydia"`). `set` gets invoked, and logs `"Added a new property!"`.\n\nThen, we access a property value on the proxy object, the `get` property on the handler object got invoked. `"Accessed a property!"` gets logged.',
+      'With a Proxy object, we can add custom behavior to an object that we pass to it as the second argument. In tis case, we pass the `handler` object which contained to properties: `set` and `get`. `set` gets invoked whenever we _set_ property values, `get` gets invoked whenever we _get_ (access) property values.\n\nThe first argument is an empty object `{}`, which is the value of `person`. To this object, the custom behavior specified in the `handler` object gets added. If we add a property to the `person` object, `set` will get invoked. If we access a property on the `person` object, `get` gets invoked.\n\nFirst, we added a new property `name` to the proxy object (`person.name = "Rasel"`). `set` gets invoked, and logs `"Added a new property!"`.\n\nThen, we access a property value on the proxy object, the `get` property on the handler object got invoked. `"Accessed a property!"` gets logged.',
   },
   {
     id: 136,
     title: "136. Which of the following will modify the `person` object?",
-    code: 'const person = { name: "Lydia Hallie" };\n\nObject.seal(person);',
+    code: 'const person = { name: "Rasel Kazi" };\n\nObject.seal(person);',
     options: [
       {
         correct: true,
@@ -3364,7 +3364,7 @@ export const quizData = [
   {
     id: 137,
     title: "137. Which of the following will modify the `person` object?",
-    code: 'const person = {\n\tname: "Lydia Hallie",\n\taddress: {\n\t\tstreet: "100 Main St"\n\t}\n};\n\nObject.freeze(person);',
+    code: 'const person = {\n\tname: "Rasel Kazi",\n\taddress: {\n\t\tstreet: "100 Main St"\n\t}\n};\n\nObject.freeze(person);',
     options: [
       {
         correct: false,
@@ -3464,7 +3464,7 @@ export const quizData = [
   {
     id: 141,
     title: "141. What's the output?",
-    code: 'const person = {\n\tname: "Lydia Hallie",\n\thobbies: ["coding"]\n};\n\nfunction addHobby(hobby, hobbies = person.hobbies) {\n\thobbies.push(hobby);\n\treturn hobbies;\n}\n\naddHobby("running", []);\naddHobby("dancing");\naddHobby("baking", person.hobbies);\n\nconsole.log(person.hobbies);',
+    code: 'const person = {\n\tname: "Rasel Kazi",\n\thobbies: ["coding"]\n};\n\nfunction addHobby(hobby, hobbies = person.hobbies) {\n\thobbies.push(hobby);\n\treturn hobbies;\n}\n\naddHobby("running", []);\naddHobby("dancing");\naddHobby("baking", person.hobbies);\n\nconsole.log(person.hobbies);',
     options: [
       {
         correct: false,
@@ -3539,8 +3539,8 @@ export const quizData = [
   {
     id: 144,
     title:
-      '144. What do we need to add to the `person` object to get `["Lydia Hallie", 21]` as the output of `[...person]`?',
-    code: 'const person = {\n  name: "Lydia Hallie",\n  age: 21\n}\n\n[...person] // ["Lydia Hallie", 21]',
+      '144. What do we need to add to the `person` object to get `["Rasel Kazi", 21]` as the output of `[...person]`?',
+    code: 'const person = {\n  name: "Rasel Kazi",\n  age: 21\n}\n\n[...person] // ["Rasel Kazi", 21]',
     options: [
       {
         correct: false,
@@ -3560,6 +3560,6 @@ export const quizData = [
       },
     ],
     explanation:
-      'Objects aren\'t iterable by default. An iterable is an iterable if the iterator protocol is present. We can add this manually by adding the iterator symbol `[Symbol.iterator]`, which has to return a generator object, for example by making it a generator function `*[Symbol.iterator]() {}`. This generator function has to yield the `Object.values` of the `person` object if we want it to return the array `["Lydia Hallie", 21]`: `yield* Object.values(this)`.',
+      'Objects aren\'t iterable by default. An iterable is an iterable if the iterator protocol is present. We can add this manually by adding the iterator symbol `[Symbol.iterator]`, which has to return a generator object, for example by making it a generator function `*[Symbol.iterator]() {}`. This generator function has to yield the `Object.values` of the `person` object if we want it to return the array `["Rasel Kazi", 21]`: `yield* Object.values(this)`.',
   },
 ];

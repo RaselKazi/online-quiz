@@ -5,6 +5,7 @@
 :root {
   /*========== Colors ==========*/
   --hue-color: 240;
+
   --white-color: #fff;
 }
 
@@ -52,9 +53,16 @@
 
 /*=============== CLOCK ===============*/
 
-.clock__circle {
+.clock_circle {
   box-shadow: -6px -6px 16px var(--white-color),
     6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
     inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
     inset -6px -6px 16px var(--white-color);
+}
+
+.dark_theme {
+  box-shadow: 6px 6px 16px rgba(1, 2, 4, 0.684),
+    -6px -6px 16px rgba(2, 10, 22, 0.33),
+    inset -6px -6px 16px rgba(6, 2, 20, 0.305),
+    inset 6px 6px 12px rgba(1, 1, 26, 0.407);
 }
