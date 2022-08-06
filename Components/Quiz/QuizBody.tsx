@@ -21,10 +21,17 @@ type QuizBodyProps = {
   start: () => void;
   reset: () => void;
 };
+
+type QuizExplain = {
+  ansId: number | any;
+  correct: boolean;
+  text: string | any;
+  explain: string;
+};
 export default function QuizBody({ countdown, start, reset }: QuizBodyProps) {
   const [pvs, setPvs] = useState(true);
   const [correctOption, setCorrectOption] = useState(5);
-  const [explain, setExplain] = useState(defaultExplain);
+  const [explain, setExplain] = useState<QuizExplain>({} as QuizExplain);
   const [openModule, setOpenModule] = useState(false);
   const [count, setCount] = useState(30);
   const [nextActive, setNextActive] = useState(true);

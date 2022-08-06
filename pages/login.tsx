@@ -24,17 +24,17 @@ export default function login() {
   const { state, dispatch } = useContext(Store);
   const { userInfo } = state;
 
-  //firebaseGoogleAuth
-  const firebaseAuth = getAuth(firebaseApp);
-  const provider = new GoogleAuthProvider();
+  // //firebaseGoogleAuth
+  // const firebaseAuth = getAuth(firebaseApp);
+  // const provider = new GoogleAuthProvider();
 
-  const signInGoogle = async () => {
-    const { user } = await signInWithPopup(firebaseAuth, provider);
-    const { refreshToken, providerData } = user;
-    // dispatch({ type: "USER_LOGIN", payload: user });
-    console.log(refreshToken, providerData);
-    router.push("/quiz");
-  };
+  // const signInGoogle = async () => {
+  //   const { user } = await signInWithPopup(firebaseAuth, provider);
+  //   const { refreshToken, providerData } = user;
+  //   // dispatch({ type: "USER_LOGIN", payload: user });
+  //   console.log(refreshToken, providerData);
+  //   router.push("/quiz");
+  // };
 
   useEffect(() => {
     console.log(userInfo);
@@ -98,9 +98,7 @@ export default function login() {
           </h1>
 
           <div className=" flex flex-col items-center">
-            <div
-              className="flex items-center justify-center bg-slate-900/60 border border-sky-500 px-4 py-2 rounded-full cursor-pointer text-gray-100  transition-all duration-300 hover:bg-slate-50  hover:text-gray-900 text-xl"
-              onClick={signInGoogle}>
+            <div className="flex items-center justify-center bg-slate-900/60 border border-sky-500 px-4 py-2 rounded-full cursor-pointer text-gray-100  transition-all duration-300 hover:bg-slate-50  hover:text-gray-900 text-xl">
               <Image
                 className=" h-screen "
                 alt="avatar"
