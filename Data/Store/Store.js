@@ -42,6 +42,15 @@ function reducer(state, action) {
       localStorage.setItem("answerItems", JSON.stringify(answer));
       return { ...state, answer };
     }
+
+    case "RESET_QUIZ": {
+      return {
+        ...state,
+        currantQuestionId:1,
+        answer: [],
+      };
+    }
+
     case "UPDATE_QUESTION_ID": {
       const currantId = action.payload;
       localStorage.setItem("QuestionId", JSON.stringify(currantId));
@@ -57,6 +66,11 @@ function reducer(state, action) {
       localStorage.setItem("user", JSON.stringify(newUser));
       return { ...state, userInfo: newUser };
     }
+    case "USER_LOGOUT":
+      return {
+        ...state,
+        userInfo: null,
+      };
     default:
       return state;
   }

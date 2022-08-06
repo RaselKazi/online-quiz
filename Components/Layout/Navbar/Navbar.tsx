@@ -5,7 +5,6 @@ import FrameButton from "../../Utils/FrameButton";
 import { Store } from "../../../Data/Store/Store";
 
 function Navbar() {
-  const [open, setOpen] = useState(false);
   const { state, dispatch } = useContext(Store);
 
   const { theme } = state;
@@ -27,6 +26,12 @@ function Navbar() {
       type: "UPDATE_THEME",
       payload: colorTheme,
     });
+  };
+  const resetQuiz = () => {
+    dispatch({ type: "RESET_QUIZ" });
+  };
+  const logOut = () => {
+    dispatch({ type: "USER_LOGOUT" });
   };
 
   return (
@@ -65,9 +70,7 @@ function Navbar() {
           </svg>
         )}
       </div>
-      <div
-        className="flex relative  items-center"
-        onClick={() => setOpen(!open)}>
+      <div className="flex relative  items-center group">
         <div className=" w-10 h-10 -ml-3">
           <Image
             className=" rounded-full hover:opacity-90 cursor-pointer"
@@ -80,16 +83,19 @@ function Navbar() {
         <h1 className=" hidden lg:block ml-3 cursor-pointer text-slate-600   hover:text-slate-400 text-center font-medium text-lg  dark:text-slate-100  dark:hover:text-slate-400 capitalize  transition-all duration-300">
           Rasel kazi
         </h1>
-        {open && (
-          <div className="absolute z-20 top-12 -left-8  w-28 bg-slate-50 rounded-md text-center font-medium text-lg text-slate-600 dark:bg-slate-900 dark:text-slate-200 capitalize border border-slate-300   dark:border-slate-600 transition-all duration-300">
-            <h1 className="  py-1 cursor-pointer border-b border-slate-300  dark:border-slate-600  hover:bg-slate-300 ">
-              reset Quiz
-            </h1>
-            <h1 className=" py-1 cursor-pointer   hover:bg-slate-300 dark:hover:bg-slate-700 ">
-              sin out
-            </h1>
-          </div>
-        )}
+
+        <div className=" hidden group-hover:block absolute z-20 top-6 -left-2  w-28 bg-slate-50 rounded-md text-center font-medium text-lg text-slate-600 dark:bg-slate-900 dark:text-slate-200 capitalize border border-slate-300   dark:border-slate-600 group-hover:transition-all duration-300 ">
+          <h1
+            className="  py-1 cursor-pointer border-b border-slate-300  dark:border-slate-600  hover:bg-slate-300 dark:hover:bg-slate-700"
+            onClick={resetQuiz}>
+            reset Quiz
+          </h1>
+          <h1
+            className=" py-1 cursor-pointer   hover:bg-slate-300 dark:hover:bg-slate-700 "
+            onClick={logOut}>
+            log out
+          </h1>
+        </div>
       </div>
     </div>
   );

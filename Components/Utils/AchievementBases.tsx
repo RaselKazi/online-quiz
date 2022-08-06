@@ -7,7 +7,7 @@ export default function AchievementBases({
   opacity,
 }: AchievementProps) {
   return (
-    <div style={{ opacity: `${opacity <= 100 ? opacity : 100}%` }}>
+    <div style={{ opacity: `${opacity >= 100 ? 100 : 40}%` }}>
       <div className=" relative">
         <div className=" absolute -bottom-10 left-2 h-10 w-28 rounded-full w  blur-xl bg-gray-300 dark:bg-slate-700"></div>
         <div className=" relative  h-[4.5rem] w-[7rem] bg-gray-50 dark:bg-slate-900 rounded-xl ">

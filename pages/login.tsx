@@ -146,10 +146,10 @@ export default function login() {
             <button
               disabled={loading}
               type="submit"
-              className="py-2 text-2xl text-center font-semibold text-white bg-sky-400 w-full h-14 capitalize disabled:opacity-30"
+              className="py-2 text-3xl text-center font-semibold text-white bg-sky-400 w-full h-14 capitalize disabled:opacity-30"
               onClick={handelLogin}>
               <div className=" flex justify-center items-center">
-                <h1>Log in</h1>
+                <h1>Login</h1>
                 <div
                   className={`animate-spin ml-5 h-6 w-6 rounded-full border-gray-400 border-r-gray-200 border-4 transition-all duration-300  ${
                     !loading && "hidden"

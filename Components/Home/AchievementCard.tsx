@@ -29,7 +29,7 @@ export default function AchievementCard({
       </div>
       <div className=" grid grid-cols-3 md:grid-cols-2  lg:grid-cols-3 justify-items-center items-center mt-20 mb-12 gap-6 md:gap-16 lg:gap-10 ">
         <AchievementBases
-          opacity={Math.floor((totalCorrectAns / 20) * 100)}
+          opacity={Math.floor((totalCorrectAns / 10) * 100)}
           color="purple"
           tittle=" Comeback"
         />
